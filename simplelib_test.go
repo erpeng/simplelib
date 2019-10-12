@@ -32,3 +32,12 @@ func TestHelloBytes(t *testing.T) {
 		t.Error("incorrect size: ", v)
 	}
 }
+
+
+func TestSetCallBack(t *testing.T) {
+	simpleclass := simplelib.NewSimpleClass()
+	c := simplelib.NewSCCGo()
+	simpleclass.SetCallBack(c)
+	simplelib.DeleteSCCGo(c)
+	
+}
